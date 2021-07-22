@@ -158,6 +158,10 @@
         avSessionPreset = AVCaptureSessionPreset1280x720;
     }
         break;
+    case LFCaptureSessionPreset1080x1920:{
+        avSessionPreset = AVCaptureSessionPreset1920x1080;
+    }
+        break;
     default: {
         avSessionPreset = AVCaptureSessionPreset640x480;
     }
@@ -246,7 +250,10 @@
             videoSize = CGSizeMake(720, 1280);
         }
             break;
-            
+        case LFCaptureSessionPreset1080x1920:{
+            videoSize = CGSizeMake(1080, 1920);
+        }
+            break;
         default:{
             videoSize = CGSizeMake(360, 640);
         }
